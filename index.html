@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Chat Box</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>WhatsApp Clone Chat</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<div class="chat-box">
-  <div class="chat-header">
-    Real-Time Chat
+  <div class="chat-wrapper">
+    <header class="chat-header">
+      <h2>Chat with Group</h2>
+    </header>
+    <main class="chat-box" id="chat-box"></main>
+    <form class="chat-input" id="chat-form">
+      <input type="text" id="message" placeholder="Type a message" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
   </div>
-
-  <div class="chat-messages" id="messages">
-    <!-- Messages will be inserted here -->
-  </div>
-
-  <div id="typing" class="typing-indicator"></div>
-
-  <form id="form" class="chat-form">
-    <input id="input" type="text" placeholder="Type a message..." autocomplete="off" />
-    <button type="submit">Send</button>
-  </form>
-</div>
-
-<script src="/socket.io/socket.io.js"></script>
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
